@@ -181,15 +181,23 @@ table, th, td {
     border: 1px solid #222;
 }
 
-@media print {
-    table, th, td {
-        border-color: black;
-    }
-}
 
 td, th {
     padding: .3em .6em .2em;
 }
+
+.black {
+	background-color: black;
+}
+
+@media print {
+    td.black {
+		background-color: black;
+        -webkit-print-color-adjust: exact; 
+    }
+}
+
+
 
 .new-block-formatting-context {
     /* Starts a new block formatting context which will prevent text from wrapping tightly around
@@ -267,8 +275,8 @@ td, th {
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100%;
-        width: 8.5in; /* = 8.5in at 12pt (1em) */
-        height: 11in; /* = 11in at 12pt (1em) */
+        width: 8.5in;
+        height: 11in; 
         page-break-before: always;
     }
 }
