@@ -205,6 +205,19 @@ public class binaryGridScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
+		float scalar = transform.lossyScale.x;
+
+		submit.transform.GetChild (2).GetComponent<Light> ().range *= scalar;
+		led0.transform.GetChild (0).GetComponent<Light> ().range *= scalar;
+		led1.transform.GetChild (0).GetComponent<Light> ().range *= scalar;
+		led2.transform.GetChild (0).GetComponent<Light> ().range *= scalar;
+		led3.transform.GetChild (0).GetComponent<Light> ().range *= scalar;
+		led4.transform.GetChild (0).GetComponent<Light> ().range *= scalar;
+
+		ledValid1.transform.GetChild (0).GetComponent<Light> ().range *= scalar;
+		ledValid2.transform.GetChild (0).GetComponent<Light> ().range *= scalar;
+		ledValid3.transform.GetChild (0).GetComponent<Light> ().range *= scalar; 
+
 		CreatePuzzle ();
 
 		buttonReset.OnInteract += delegate() {

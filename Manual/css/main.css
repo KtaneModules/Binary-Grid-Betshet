@@ -181,20 +181,14 @@ table, th, td {
     border: 1px solid #222;
 }
 
+@media print {
+    table, th, td {
+        border-color: black;
+    }
+}
 
 td, th {
     padding: .3em .6em .2em;
-}
-
-.black {
-	background-color: black;
-}
-
-@media print {
-    td.black {
-		background-color: black;
-        -webkit-print-color-adjust: exact; 
-    }
 }
 
 
