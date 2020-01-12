@@ -339,6 +339,13 @@ public class binaryGridScript : MonoBehaviour
 			GetComponent<KMBombModule>().HandleStrike();
 		}
 
+		Debug.LogFormat("Your check was "+ GetValue (patterns [selectedPattern, 0, 0], patterns [selectedPattern, 0, 1])+
+			GetValue (patterns [selectedPattern, 1, 0], patterns [selectedPattern, 1, 1])+ 
+			GetValue (patterns [selectedPattern, 2, 0], patterns [selectedPattern, 2, 1])+ 
+			GetValue (patterns [selectedPattern, 3, 0], patterns [selectedPattern, 3, 1])+
+			GetValue (patterns [selectedPattern, 4, 0], patterns [selectedPattern, 4, 1])+ 
+			GetValue (patterns [selectedPattern, 5, 0], patterns [selectedPattern, 5, 1]));
+
 		valid = 0;
 	}
 
