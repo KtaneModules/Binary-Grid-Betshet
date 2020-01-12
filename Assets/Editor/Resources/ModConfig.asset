@@ -16,7 +16,7 @@ MonoBehaviour:
   author: Betshet
   description: "Binary Grid\r\n\"There are 10 types of people in the world : those
     who understand binary, and those who don't.\"\r\n\r\nModule ID: binaryGrid\r\n\r\nCreated
-    by: Betshet"
+    by: Betshet\n\nTwitch Plays support by: KingBranBran"
   version: 1.0
   outputFolder: build
   previewImage: {fileID: 2800000, guid: 77518fa69e985e0408ca36707a42bc11, type: 3}

@@ -27,7 +27,7 @@
                         <li>The module consists of a 5x5 grid of zeroes and ones.</li>
 						<li>Each square can be switched between 0 and 1 when pressed, and the original state of the grid can be restored by pressing the "Reset" button.</li>
                         <li>The goal is to find the square to submit in three stages.</li>
-						<li>To submit an answer, push the "Submit" button and press the square of your choice.</li>
+						<li>To submit an answer, push the "Submit" button and press the square of your choice. <i>NOTE : The submit button is a toggle, be careful after submitting an answer</i>.</li>
 						<li>The answer is in two parts : the row and column number.</li>
 					</ul>
 
@@ -431,11 +431,12 @@
 					</table>
 					<br>
                     <h3>Solution part 1 : row number</h3>
-					<p>With both keys, it is now possible to get the stage solution. For the row number, you need to count the number of ones and the number of zeroes in the two keys, and take the minimum between the two. You can then substract x to that number to obtain the row number of the solution. x is determined as follow : </p>
+					<p>With both keys, it is now possible to get the stage solution. For the row number, you need to count the number of ones and the number of zeroes in the two keys, and take the minimum between the two. You can then subtract x to that number to obtain the row number of the solution. x is determined as follow : </p>
 					<ul>
 						<li>If there are strikes, x = 1. </li>
 						<li>Otherwise, x = 2.</li>
 					</ul>
+					<p><i>NOTE : The number of strikes is counted when the stage solution is generated. That means that if a strike occurs during a stage, the solution will stay the same, and the strike will only be relevant for the next stage of the module.</i></p>
 					
 					<h3>Solution part 2 : column number</h3>
 					<p>To find the column number, the primary key needs to be entered on the module, in the emplacements marqued by the black squares. Once the key is entered, press the "Check" button. If the key has been correctly entered, the light above one of the columns should turn on, showing the column where the solution is. You can then submit the solution.</p>
